@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
+ 
 <head>
-    <title>Name</title>
+    <title>HTML Form Name</title>
     <script>
         function valid() {
             var name = document.getElementsByName("name")[0].value.trim();
  
-         
+ 
             if (name === "") {
                 alert("Name cannot be empty");
                 return false;
             }
  
-         
+ 
             var words = name.split(" ");
             var count = 0;
             for (var i = 0; i < words.length; i++) {
@@ -25,39 +26,39 @@
                 return false;
             }
  
-     
-            var firstChar = name.charAt(0);
-            if (
-                !((firstChar >= 'A' && firstChar <= 'Z') ||
-                  (firstChar >= 'a' && firstChar <= 'z'))
-            ) {
-                alert("Name must start with a letter");
+ 
+            const first = name.charAt(0);
+            const prothomC = (first >= 'a' && first <= 'z') || (first >= 'A' && first <= 'Z');
+ 
+            if (!prothomC) {
+                alert("Name must start with a letter.");
                 return false;
             }
  
-       
-            for (var j = 0; j < name.length; j++) {
-                var ch = name.charAt(j);
-                if (
-                    !((ch >= 'A' && ch <= 'Z') ||
-                      (ch >= 'a' && ch <= 'z') ||
-                      ch === '.' || ch === '-' || ch === ' ')
-                ) {
-                    alert("Only letters, dot (.), dash (-), and space are allowed");
+           
+            const nibeshudu = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .-'
+ 
+           
+            for (const char of name) {
+             
+                if (!nibeshudu.includes(char)) {
+                    alert("Only letters, dot (.), dash (-), and space are allowed.");
                     return false;
                 }
             }
  
+         
             return true;
         }
     </script>
 </head>
+ 
 <body>
     <form onsubmit="return valid()">
-        Name:<br/>
-        <input type="text" name="name"><br/>
+        Name:<br />
+        <input type="text" name="name"><br />
         <input type="submit" value="Submit">
     </form>
 </body>
-</html>
  
+</html>
