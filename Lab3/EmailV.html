@@ -1,15 +1,14 @@
- 
 <html>
     <head>
-        <title> Email</title>
+        <title>Email</title>
         <script>
-            function valid() {
+            function validate() {
                 var email = document.getElementsByName("email")[0].value;
                 if (email === "") {
                     alert("Cannot be empty");
                     return false;
                 }
-                if (email.indexOf("@") === -1) {
+                if (!email.includes("@")) {
                     alert("Email must contain @");
                     return false;
                 }
@@ -21,11 +20,11 @@
         <table>
             <tr>
                 <td>Email <br/>
-                <form onsubmit="return valid()">
+                <form onsubmit="return validate()">
                     <input type="email" name="email" value="" /><br/>
                     <input type="submit" value="Submit" />
                 </form></td>
             </tr>
         </table>
     </body>
-</html>
+</html> 
