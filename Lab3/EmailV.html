@@ -1,0 +1,31 @@
+ 
+<html>
+    <head>
+        <title> Email</title>
+        <script>
+            function valid() {
+                var email = document.getElementsByName("email")[0].value;
+                if (email === "") {
+                    alert("Cannot be empty");
+                    return false;
+                }
+                if (email.indexOf("@") === -1) {
+                    alert("Email must contain @");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Email <br/>
+                <form onsubmit="return valid()">
+                    <input type="email" name="email" value="" /><br/>
+                    <input type="submit" value="Submit" />
+                </form></td>
+            </tr>
+        </table>
+    </body>
+</html>
