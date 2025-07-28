@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>HTML Form Gender with Validation</title>
+    <script>
+        function validate() {
+            var male = document.getElementById("male").checked;
+            var female = document.getElementById("female").checked;
+            var other = document.getElementById("other").checked;
+            
+            if (!male && !female && !other) {
+                alert("Please select at least one gender option");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Gender</legend>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="return validate()">
+                        <input type="radio" id="male" name="gender" value="male"> Male
+                        <input type="radio" id="female" name="gender" value="female"> Female
+                        <input type="radio" id="other" name="gender" value="other"> Other
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

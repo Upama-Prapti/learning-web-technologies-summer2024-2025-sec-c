@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>HTML Form DOB with Validation</title>
+    <script>
+        function validate() {
+            var day = document.getElementById("day").value;
+            var month = document.getElementById("month").value;
+            var year = document.getElementById("year").value;
+
+            if (day === "" || month === "" || year === "") {
+                alert("All fields cannot be empty");
+                return false;
+            }
+
+           
+            let dayx = Number(day);
+            let monthx = Number(month);
+            let yearx = Number(year);
+
+            
+            if (isNaN(dayx) || isNaN(monthx) || isNaN(yearx)) {
+                alert("All fields must be valid numbers");
+                return false;
+            }
+
+     
+            if (dayx < 0 || dayx > 31) {
+                alert("Day must be between 0 and 31");
+                return false;
+            }
+
+          
+            if (monthx < 1 || monthx > 12) {
+                alert("Month must be between 1 and 12");
+                return false;
+            }
+
+           
+            if (yearx < 1900 || yearx > 2016) {
+                alert("Year must be between 1900 and 2016");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Date Of Birth</legend>
+        <table>
+            <tr>
+                <td>dd <br/>
+                    <form onsubmit="return validate()">
+                        <input type="text" id="day" name="day" value="" /> /
+                    </td>
+                    <td>mm <br/>
+                        <input type="text" id="month" name="month" value="" /> /
+                    </td>
+                    <td>yyyy <br/>
+                        <input type="text" id="year" name="year" value="" />
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit" />
+        </form>
+    </fieldset>
+</body>
+</html>
