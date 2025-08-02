@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css"
+</head>
+<body>
+    <center>
+<table>
+    <tr>
+        <td>Calculator</td>
+    </tr>
+    <tr>
+        <td>
+            <form id="calcForm" onsubmit="return false;">
+                <input type="text" id="num1" name="number1" placeholder="Enter first number" required><br/>
+                <input type="text" id="num2" name="number2" placeholder="Enter second number" required><br/>
+                
+       
+                <input type="button" id="plus" name="operator" value="+">
+                <input type="button" id="minus" name="operator" value="-">
+                <input type="button"id="multiplication" name="operator" value="*">
+                <input type="button" id="division"name="operator" value="/">
+                <input type="button"id="percentage" name="operator" value="%"><br/>
+                <div>
+                     <button value= "c" id ="clean"onclick="gayeb()">C</button><br/>
+                    </div>
+                  <input type="text" id="result" name="result" placeholder="Result" readonly><br/>
+                 <input type="button" id="calculateBtn" value="Calculate">
+                </form>
+            </td>
+        </tr>
+               
+          
+</table>
+
+</center>
+<script src="Calculator.js"></script>
+
+</body>
+</html>

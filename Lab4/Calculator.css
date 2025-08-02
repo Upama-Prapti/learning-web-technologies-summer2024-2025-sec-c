@@ -1,0 +1,176 @@
+#num1{
+
+    background-color: rgb(60, 196, 166);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+ 
+#calculateBtn{
+
+    background-color: rgb(233, 175, 193);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: rgb(29, 27, 27);
+
+    font-size: bold;
+
+}
+ 
+#num2{
+
+    background-color: rgb(100, 169, 219);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+
+
+
+#plus{
+
+    background-color: rgb(157, 100, 219);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+
+
+
+#minus{
+
+    background-color: rgb(157, 100, 219);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+
+
+
+#multiplication{
+
+    background-color: rgb(157, 100, 219);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+
+
+
+#division{
+
+    background-color: rgb(157, 100, 219);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+
+
+
+#percentage{
+
+    background-color: rgb(157, 100, 219);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+
+
+
+
+
+#result{
+
+    background-color: rgb(7, 1, 14);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+ 
+#clean{
+
+    background-color: rgb(77, 17, 43);
+
+    margin: 30px 10px 30px 10px;
+
+    padding: 10px 30px 10px 30px;
+
+    border: royalblue;
+
+    color: white;
+
+    font-size: bold;
+
+}
+ 
+
+ 
