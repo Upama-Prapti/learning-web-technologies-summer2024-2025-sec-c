@@ -7,7 +7,7 @@ $arrx = [
 
 
 for($i = 0; $i < 3; $i++){
-    for($j = 0; $j < count($arr[$i]); $j++){
+    for($j = 0; $j < count($arrx[$i]); $j++){
         echo $arrx[$i][$j] . " ";
     }
     echo "<br>";
