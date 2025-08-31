@@ -1,18 +1,18 @@
 <?php
-$arr = array(5, 10, 15, 20, 25);
-$sr= 15;
+$arr = array(10, 20, 30, 40, 50);
+$search = 30;
 $found = false;
 
-foreach($arr as $val){
-    if($val == $sr){
+foreach($arr as $value){
+    if($value == $search){
         $found = true;
         break;
     }
 }
 
 if($found){
-    echo "$sr found in array";
+    echo "$search found in array";
 } else {
-    echo "$sr not found in array";
+    echo "$search not found in array";
 }
 ?>
